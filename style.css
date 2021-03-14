@@ -225,7 +225,7 @@ nav ul li.dropdown {
 footer{
   background-color: #333;
   color:#fff;
-  padding:20px 40px 40px;
+  padding:20px 40px 0px;
 }
 footer .highlight{
     margin-bottom:10px;
@@ -249,6 +249,7 @@ footer .header{/*
 footer .header ul{
   float:  left;
   list-style:   none;    
+  margin-right:25px;
 }
 footer .header ul li{
   padding:  4px;
