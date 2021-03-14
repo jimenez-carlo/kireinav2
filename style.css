@@ -429,7 +429,7 @@ footer .sub-footer p{
    bottom: 0;
   }
   footer .container {
-    padding: 0px 5vw 30px 2vw;
+    /*padding: 0px 5vw 30px 2vw;*/
   }
   footer .header ul{
     margin:0;
@@ -440,6 +440,9 @@ footer .sub-footer p{
   .highlight{
     font-size: 20px;
     font-weight: bold;
+  }
+  footer .header ul:nth-child(3){
+      display:  none;
   }
   footer .sub-footer p{
   margin:0px 1vw;
@@ -501,7 +504,7 @@ footer .sub-footer p{
    bottom: 0;
   }
   footer .container {
-    padding: 0px 5vw 30px 2vw;
+    /*padding: 0px 5vw 30px 2vw;*/
   }
   footer .header ul{
     margin:0;
@@ -556,7 +559,7 @@ footer .sub-footer p{
     bottom: 0;
   }
   footer .container {
-    padding: 0px 5vw 30px 2vw;
+    /*padding: 0px 5vw 30px 2vw;*/
   }
   footer .header ul{
     margin:0;
