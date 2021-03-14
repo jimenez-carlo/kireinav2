@@ -117,6 +117,7 @@ nav ul li.dropdown {
 	vertical-align: middle;
 	height: 70vh;
 	max-height: 70vh;
+  width:  auto;
 }
 
 /* Slideshow container */
@@ -350,6 +351,10 @@ footer .sub-footer p{
     display:block;
     float: left;
   }
+  .mySlides img {
+  height: auto;
+  width:  100%;
+  }
 
   .tab button {
 
@@ -420,6 +425,10 @@ footer .sub-footer p{
     display:block;
     float: left;
   }
+  .mySlides img {
+  height: auto;
+  width:  100%;
+  }
   .tab{
     margin: 5vh 0 0;
   }
@@ -470,6 +479,10 @@ footer .sub-footer p{
 @media only screen and (max-width: 768px) {
   nav {
     padding: 5px 50px;
+  }
+  .mySlides img {
+  height: auto;
+  width:  100%;
   }
   .tab{
     margin: 5vh 0 0;
