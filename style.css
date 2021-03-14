@@ -7,12 +7,16 @@ color
 #000000 font-color
 */
 
-*{
+*,*:before,*:after{
 	box-sizing: border-box;
 	margin: 0;
 }
 body{
 font-family: sans-serif;	
+}
+p{
+  font-size: 14px;
+  line-height: 24px;
 }
 header{
 	background-color:#333;
@@ -213,9 +217,9 @@ nav ul li.dropdown {
 /* Style the tab content */
 .tabcontent-container{
   margin-top: 5vh;
-  padding: 5vh 10vw 5vh;
-  background: #333;
-  color:#fff;
+  padding: 5vh 2vw;
+  /*background: #333;*/
+  /*color:#fff;*/
 }
 .tabcontent {
   display: none;
@@ -229,18 +233,23 @@ footer{
 }
 footer .highlight{
     margin-bottom:10px;
-    font-weight:  bold; 
+    font-size:  17px;
+    /*font-weight:  bold; */
 }
 footer .container{
   width:  100%;
   display:  table;
   clear: both;
   content:""; 
-  padding:0px 15vw 30px 15vw;
+  padding:0px 15vw 30px 5vw;
 }
 footer .logo{
   float:left;
   width: 10vw;
+}
+footer img .logo{
+  height:   auto;
+  width:  100%;
 }
 footer .header{/*
   float:  right;
@@ -249,7 +258,7 @@ footer .header{/*
 footer .header ul{
   float:  left;
   list-style:   none;    
-  margin-right:25px;
+  margin:0 30px;
 }
 footer .header ul li{
   padding:  4px;
@@ -269,4 +278,36 @@ footer .sub-footer p{
   text-align: center;
   font-size: 12px;
   margin:0px 5vw;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  position:   relative;
+  margin: 10px;
+  padding: 5px;
+  font-size: 30px;
+}
+.flex-container h4{
+  color:#337ab7;
+  font-size: 20px;
+}
+.view-more-btn{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 100px;
+    background: #706f6f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    outline: none;
+    position: absolute;
+    left:  0;
+    bottom:   10%;
+}
+.view-more-btn:hover{
+  background: #337ab7;
 }
