@@ -342,11 +342,13 @@ footer .sub-footer p{
   }
 
   .tab button {
+
     width: 100%;
     margin-top: 20px;
   }
   .tab{
     margin: 5vh 0 0;
+    padding: 0px 50px;
   }
   .flex-container{
     flex-direction: column;
