@@ -248,6 +248,15 @@ nav ul li.dropdown {
   color:#b73333;
   font-size: 20px;
 }
+#flex-container-1{
+  flex-wrap: wrap;
+   align-content: space-between;
+}
+#flex-container-1{
+   /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;  
+}
 .view-more-btn{
     cursor: pointer;
     transition: 0.3s;
@@ -354,7 +363,10 @@ footer .sub-footer p{
   .flex-container{
     flex-direction: column;
   }
-  .col1{
+  #flex-container-1 {
+    align-content: center;
+  }
+  .col2,.col3{
     display:  none;
   }
   .col2 p,.col3 p{
@@ -414,7 +426,10 @@ footer .sub-footer p{
   .flex-container{
     flex-direction: column;
   }
-  .col1{
+  #flex-container-1 {
+    align-content: center;
+  }
+  .col2,.col3{
     display:  none;
   }
   .col2 p,.col3 p{
@@ -462,7 +477,10 @@ footer .sub-footer p{
   .flex-container{
     flex-direction: column;
   }
-  .col1{
+  #flex-container-1 {
+    align-content: center;
+  }
+  .col2,.col3{
     display:  none;
   }
   .col2 p,.col3 p{
@@ -497,9 +515,6 @@ footer .sub-footer p{
 @media only screen and (max-width: 992px) {
   .tab{
     margin: 5vh 0 0;
-  }
-  .col1{
-    display:  none;
   }
   .col2 p,.col3 p{
     padding-bottom:10px;
