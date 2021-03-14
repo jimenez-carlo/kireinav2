@@ -298,7 +298,7 @@ nav ul li.dropdown {
   float:left;
   width:50%;
   position:   relative; 
-  padding-bottom:   100px;
+  padding-bottom:   50px;
 }
 .about-img{
   float:right;
@@ -380,11 +380,11 @@ footer .sub-footer p{
     display:block;
     float: left;
   }
-  .mySlides img {
+/*  .mySlides img {
   height: auto;
   width:  100%;
   }
-
+*/
   .tab button {
 
     width: 100%;
@@ -470,11 +470,11 @@ footer .sub-footer p{
     display:block;
     float: left;
   }
-  .mySlides img {
+/*  .mySlides img {
   height: auto;
   width:  100%;
   }
-  .tab{
+*/  .tab{
     margin: 5vh 0 0;
   }
   .flex-container{
@@ -525,11 +525,11 @@ footer .sub-footer p{
   nav {
     padding: 5px 50px;
   }
-  .mySlides img {
+/*  .mySlides img {
   height: auto;
   width:  100%;
   }
-  .tab{
+*/  .tab{
     margin: 5vh 0 0;
   }
   .flex-container{
