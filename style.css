@@ -5,6 +5,7 @@ color
 #b1b1b1 button
 #337ab7 button active 
 #000000 font-color
+#b73333 owner 
 */
 
 *,*:before,*:after{
@@ -211,12 +212,12 @@ nav ul li.dropdown {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #337ab7;
+  background-color: #b73333;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #337ab7;
+  background-color: #b73333;
 }
 
 /* Style the tab content */
@@ -244,7 +245,7 @@ nav ul li.dropdown {
   font-size: 30px;
 }
 .flex-container h4{
-  color:#337ab7;
+  color:#b73333;
   font-size: 20px;
 }
 .view-more-btn{
@@ -262,7 +263,7 @@ nav ul li.dropdown {
     bottom:   10%;
 }
 .view-more-btn:hover{
-  background: #337ab7;
+  background: #b73333;
 }
 
 footer{
@@ -303,7 +304,7 @@ footer .header ul li{
   padding:  4px;
 }
 footer .container .header ul li a:hover{
-    color:#337ab7;
+    color:#b73333;
 }
 footer a{
   text-decoration: none;
