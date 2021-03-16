@@ -603,4 +603,13 @@ footer .sub-footer p{
 .about2b{width: 1200px;height: 650px; background:white;margin: 0 auto;margin-top:80px;}
 .jieshao{width: 1180px;height:550px;font-size:15px;font-family: "微软雅黑";line-height: 26px; margin: 0 auto;}
 .jieshao p{margin-top: 10px;text-align: justify;}
+
+.about3a{width: 100%;height:1050px;background:white;padding: 0;overflow: hidden;}
+.about3a h1{font-weight: bold;font-size: 35px;color:black;text-align: center;margin-top:60px; }
+.about3a h2{font-weight:lighter;font-size: 18px;color:#575757;text-align: center;margin-top:30px; }
+.about3b{width: 1200px;height: 340px; margin: 0 auto;background:white;;}
+#about-ul{width: 1200px;height: 300px;margin: 0 auto;border:1px solid red;}
+#about-ul>li{width: 400px;height: 300px;float: left;}
+#about-ul>li>img{width: 400px;height:auto;}
+
 /* CALINAYA TRY CSS */
