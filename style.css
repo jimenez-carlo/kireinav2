@@ -703,7 +703,6 @@ footer .sub-footer p{
 #about-ul{width: 1200px;height: 300px;margin: 0 auto;border:1px solid red;}
 #about-ul>li{width: 400px;height: 300px;float: left;}
 #about-ul>li>img{width: 400px;height:auto;}
-
 /* CALINAYA TRY CSS */
 
 .grid-container{
@@ -737,3 +736,11 @@ footer .sub-footer p{
   grid-column: 3;
   grid-row: 2;
 }
+.about4a{width: 100%;height:1420px;background:#1f1f1f;padding: 0;overflow: hidden;}
+.about4b{width: 1200px;height: 1100px; margin: 50px auto 0px;overflow: hidden;}
+.about4a h1{font-weight: bold;font-size: 35px;color:white;text-align: center;margin-top:60px; }
+.about4a h2{font-weight:lighter;font-size: 18px;color:white;text-align: center;margin-top:30px; }
+
+.grid-item img{width:100%; height:100%;}
+
+/* CALINAYA TRY CSS */
