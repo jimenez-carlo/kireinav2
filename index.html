@@ -98,17 +98,13 @@
 		</div>
 
 		<div id="t2" class="tabcontent">
-			<div class="flex-container" id="flex-container-1">
-  				<div class="col1">
-  					<img src="https://www.hohotint.com/statics/hohofilm/images/now/gc.jpg" alt="hoho smart film">
+  				<div class="grid-container"> 
+  					<div class="item item-1"><img src="https://www.hohotint.com/statics/hohofilm/images/now/gc1.jpg" alt=""></div>
+  					<div class="item item-2"><img src="https://www.hohotint.com/statics/hohofilm/images/now/2.jpg" alt=""></div>
+  					<div class="item item-3"><img src="https://www.hohotint.com/statics/hohofilm/images/now/3.jpg" alt=""></div>
+  					<div class="item item-4"><img src="https://www.hohotint.com/statics/hohofilm/images/now/4.jpg" alt=""></div>
+  					<div class="item item-5"><img src="https://www.hohotint.com/statics/hohofilm/images/now/5.jpg" alt=""></div>
   				</div>
-  				<div class="col2">
-  					<img src="https://www.hohotint.com/statics/hohofilm/images/now/gc.jpg" alt="hoho smart film">
-  				</div>
-  				<div class="col3">
-  					<img src="https://www.hohotint.com/statics/hohofilm/images/now/gc.jpg" alt="hoho smart film">
-  				</div>
-			</div>
 		</div>
 
 		<div id="t3" class="tabcontent">
@@ -144,10 +140,10 @@
 		</div>	
 		</div>
 	</section>
-	<button class="contact-btn" onclick="openForm()"><i class="fa fa-envelope"></i>  Message Us</button>
+	<button class="contact-btn" onclick="openForm()" id="message-btn"><i class="fa fa-envelope"></i>  Message Us</button>
 	<div class="chat-popup" id="contact-form">
 	  <form action="#" class="contact-container">
-	  	<div><a href="#"  onclick="closeForm()"><i class="fa fa-window-minimize"></i></a></div>
+	  	<div><a href="javascript:void(0)"  onclick="closeForm()"><i class="fa fa-window-minimize"></i></a></div>
 	    Name:
 	    <input type="text" name="name" required>
 	    Email:

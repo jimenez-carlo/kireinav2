@@ -1,4 +1,4 @@
-
+function docid(id){ return document.getElementById(id); } 
 // Index Carousel
 var slideIndex = 0;
 showSlides();
@@ -33,21 +33,24 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  docid(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+docid("defaultOpen").click();
 
 // Index Tab End
 
 // Contact Us
 function openForm() {
-  document.getElementById("contact-form").style.display = "block"; 
+  docid("contact-form").style.display = "block"; 
+  docid('message-btn').style.display = "none"; 
 }
 
 function closeForm() {
-  document.getElementById("contact-form").style.display = "none";
+  docid("contact-form").style.display = "none";
+  docid('message-btn').style.display = "block"; 
 }
 // Contact Us End
+
