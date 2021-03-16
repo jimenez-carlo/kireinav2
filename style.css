@@ -215,7 +215,7 @@ nav ul li.dropdown {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover{
   background-color: #b73333;
 }
 
@@ -274,9 +274,6 @@ nav ul li.dropdown {
     position: absolute;
     left:  0;
     bottom:   1%;
-}
-.view-more-btn:hover{
-  background: #b73333;
 }
 .about-section{
   padding: 0vh 10vw 10vh; 
@@ -361,6 +358,79 @@ footer .sub-footer p{
   text-align: center;
   font-size: 12px;
   margin:0px 5vw;
+}
+
+/* Contact button */
+.contact-btn{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 100px;
+    background: #706f6f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    outline: none;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+}
+.contact-btn-submit{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 100%;
+    background: #706f6f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  background-color: #324155;
+  display: none;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  border: 1px solid #333;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.contact-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #324155;
+  color:#fff;
+  font-size: 12px;
+}
+.contact-container div a{
+  color:#fff;
+  text-align: right;
+  text-decoration: none;
+  display: block;
+}
+/* Full-width textarea */
+.contact-container textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 150px;
+}
+.contact-container input{
+  display: block;
+  width: 100%;
+}
+
+/* When the textarea gets focus, do something */
+.contact-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 

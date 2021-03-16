@@ -1,3 +1,5 @@
+
+// Index Carousel
 var slideIndex = 0;
 showSlides();
 
@@ -17,9 +19,10 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+// Index Carousel End
 
 
-
+// Index Tab
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -36,3 +39,15 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// Index Tab End
+
+// Contact Us
+function openForm() {
+  document.getElementById("contact-form").style.display = "block"; 
+}
+
+function closeForm() {
+  document.getElementById("contact-form").style.display = "none";
+}
+// Contact Us End
