@@ -330,8 +330,8 @@ footer .logo{
   width: 10vw;
 }
 .footer-logo{
-  height:   auto;
-  width:  100%;
+  height:   100%;
+  width:  auto;
 }
 footer .header{/*
   float:  right;
