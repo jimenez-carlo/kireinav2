@@ -160,6 +160,10 @@ nav ul li.dropdown {
   padding: 40px 100px;
   color:#fff;
 }
+.slide-content hr{
+  width: 50px;
+  margin:auto; 
+}
 .slide-content h1{
   padding: 5px 0px;
     font-size: 30px;
