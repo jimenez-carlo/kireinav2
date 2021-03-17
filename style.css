@@ -716,11 +716,18 @@ footer .sub-footer p{
 #about-ul>li>img{width: 400px;height:auto;}
 /* CALINAYA TRY CSS */
 
+.grid-container-solo{
+  display: grid;
+  grid-gap: 10px;
+  padding: 0px 10vw;
+  align-items:stretch;
+}
 .grid-container{
   display: grid;
   grid-gap: 10px;
   padding: 0px 10vw;
   align-items:stretch;
+  grid-template-columns: auto auto auto;
 }
 .item img{
  width:100%;
