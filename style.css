@@ -25,6 +25,8 @@ p{
 }
 .header-logo{
   display: none;
+  height: 50px;
+  width: auto;
 }
 header{
 	background-color:#333;
@@ -74,7 +76,7 @@ nav ul li a, .dropbtn {
 nav ul li a:hover, .dropdown:hover .dropbtn {
   /*background-color: red;*/
 
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #b73333;
 }
 
 nav ul li.dropdown {
@@ -327,7 +329,7 @@ footer .logo{
   float:left;
   width: 10vw;
 }
-footer img .logo{
+.footer-logo{
   height:   auto;
   width:  100%;
 }
@@ -441,7 +443,7 @@ footer .sub-footer p{
   }
   .header-logo{
     display: block;
-    margin: 0px 20vw;   
+    margin: 10px 20vw 0px 20vw;   
   }
   .header-logo2{
     display: none;
@@ -556,7 +558,8 @@ footer .sub-footer p{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-logo{
-    display: block;margin: 0px 25vw;
+    display: block;
+    margin: 10px 25vw 0px 25vw;   
   }
   .header-logo2{
     display: none;

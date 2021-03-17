@@ -5,9 +5,13 @@
 	padding:5vh 10vw 10vh;
 	flex-wrap: wrap;
 }
+.bottom-content-container > div{
+	padding: 0 10px;
+}
 .bottom-content-container div h2{
 	width: fit-content;
-	border-bottom: 2px solid #333;
+	color:#b73333;
+	border-bottom: 1px solid #b73333;
 }
 .bottom-content-container img{
 	margin-right: 10px;
@@ -19,9 +23,10 @@
 	width:50%;
 }
 .upper{
-	border-top:1px solid #333;
-	 display: flex;
-	 flex-direction: row;
+	border-top:2px solid #b73333;
+	padding-top:10px;
+	display: flex;
+	flex-direction: row;
 	 /*padding: 5px;*/
 }
 .bottom{
