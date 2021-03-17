@@ -132,37 +132,44 @@ nav ul li.dropdown {
   margin: auto;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.slide-control{
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding-bottom:50px;
 }
-
+.slide-pagination {
+    display: inline-block;
+    width: 26px;
+    height: 3px;
+    margin: 0;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+}
+.slide-content{
+  top:1%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 40px 100px;
+  color:#fff;
+}
+.slide-content h1{
+  padding: 5px 0px;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+.slide-content h3{
+  padding: 5px 0;
+  font-size:18px;
+  letter-spacing: 3px;
+}
 .active {
   background-color: #717171;
 }
@@ -184,11 +191,10 @@ nav ul li.dropdown {
   from {opacity: .4} 
   to {opacity: 1}
 }
-.product-header{
-	margin:5vh 0;
-}
-.product-header h2{
-	text-align: center;
+.about-header,.product-header{
+  margin:5vh 0;
+  padding-top:20px;
+  text-align:   center;
 }
 
 
@@ -196,7 +202,7 @@ nav ul li.dropdown {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  margin: 5vh 25vw 0;
+  margin: 0 25vw;
   text-align: center;
 }
 
@@ -284,11 +290,6 @@ nav ul li.dropdown {
   width:  100%;
   display: table;
   clear: both;
-}
-.about-header{
-  margin:5vh 0;
-  padding-top:20px;
-  text-align:   center;
 }
 .about-content h4{
   font-size: 20px;
@@ -393,6 +394,9 @@ footer .sub-footer p{
   background-color: #324155;
   display: none;
   position: fixed;
+  /*top:20%;
+  left: 40%;*/
+
   bottom: 23px;
   right: 28px;
   border: 1px solid #333;
