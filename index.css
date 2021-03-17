@@ -23,7 +23,7 @@
 	width:50%;
 }
 .upper{
-	border-top:2px solid #b73333;
+	border-top:1px solid #b73333;
 	padding-top:10px;
 	display: flex;
 	flex-direction: row;
