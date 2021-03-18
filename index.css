@@ -34,7 +34,7 @@
 }
 .bottom ul{
 	padding-left:15px;
-	  list-style: none;
+	list-style: none;
 }
 .bottom ul li{
 	padding: 2px;
@@ -61,4 +61,25 @@ h3{
 	.bottom-content-news,.bottom-content-faqs,.bottom-content-container img,.bottom-content-container p{
 		width:100%;
 	}
+}
+#t3{
+	padding: 0vh 10vw 10vh;
+    background-image: url('https://www.hohotint.com/statics/hohofilm/images/now/6a.jpg');
+    min-height: 400px;
+    background-position:bottom; 
+}
+#t3 h1{
+	padding: 40px 0px 5% 0px;
+}
+.tabcontent ul{
+  width: 100%;
+  height: auto;
+  list-style: none;
+  color:#fff;
+}
+.tabcontent ul li:before{
+  content: '✓ ';
+}
+.tabcontent ul li{
+	margin-bottom: 15px;
 }

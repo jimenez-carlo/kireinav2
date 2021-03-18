@@ -196,17 +196,18 @@ nav ul li.dropdown {
   to {opacity: 1}
 }
 .about-header,.product-header{
-  margin:5vh 0;
-  padding-top:20px;
+  padding:20px 0px 0px 20px;
   text-align:   center;
 }
-
+.about-header h2,.product-header h2{
+    padding-bottom:20px;  
+}
 
 
 /* Style the tab */
 .tab {
   overflow: hidden;
-  margin: 0 25vw;
+  margin: 10px 25vw 10px 25vw;
   text-align: center;
 }
 
@@ -236,13 +237,6 @@ nav ul li.dropdown {
   background-color: #b73333;
 }
 
-/* Style the tab content */
-.tabcontent-container{
-  /*margin-top: 5vh;*/
-  padding: 0vh 0vw 5vh;
-  /*background: #333;*/
-  /*color:#fff;*/
-}
 .tabcontent {
   display: none;
   padding: 6px 12px;
