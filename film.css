@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+/*智能调光玻璃*/
+.center{width: 1200px;height: auto;margin: 0 auto;}
+.glass1{width: 100%;height: 550px;background-image: url(../images/filmbc.jpg);background-repeat: no-repeat;background-position: center;}
+.glass1 img{float: left;margin-top: 75px;}
+.glass1_ms{width: 500px;height:auto;float: left;color: white;padding-top: 130px;padding-left:60px;font-family: "微软雅黑" }
+.bt{font-size: 36px;}
+.bt_en{font-size: 30px;margin-top: 20px;}
+.bt_hx{width: 50px;height: 3px;background: white;margin-top: 20px;}
+.ms{font-size: 14px;margin-top: 20px;text-align: justify;    line-height: 2;}
+/*智能调光膜*/
+.glass1-1{width: 100%;height: 550px;background-image: url(../img/filmbc.jpg);background-repeat: no-repeat;background-position: center;}
+.glass1-1 img{float: left;margin-top: 75px;}
+.glass2{width: 100%;height: 600px;}
+.glass2_ms{width: 500px;height: 500px;float: left;margin-top: 80px;font-family: "微软雅黑" }
+.ab{width: 4px;height: 30px;background: #1c7db8;float: left;margin-right: 20px;}
+.ms_bt{font-size: 26px;line-height: 26px;font-weight: bolder;color:#333; }
+.ms_nr{font-size: 14px;color: #333;line-height: 26px;margin-top: 20px;}
+.yuan{width: 10px;height: 10px;border-radius: 8px;background: #1c7db8;float: left;margin: 26px 10px 0 0; }
+.gs_nr p{width: 490px;float: left;margin-top: 20px;color:#595757;text-align: justify;}
+.gs_nr p span{color: black;font-weight: bold;}
+.gs_nr{float: left;width: 510px;height: 400px;}
+.gs_nr li{margin-top: 10px;font-size: 13px;height: auto;}
+
+.clear {
+	clear: both;
+	zoom: 1;
+}
+
+.clear:after {
+	content: '';
+	height: 0;
+	display: visibility;
+	clear: both;
+	overflow: hidden;
+}
+
+#box {
+	width: 600px;
+	height: 400px;
+float: right;
+	position: relative;
+	margin-top: 120px;
+}
+
+#img {
+	height: 100%;
+}
+
+#img .yangpin {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fi;
+}
+
+#num li {
+	float: left;
+	background-color: #B1B1B1;
+	width: 20px;
+	height: 10px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+#num {
+	position: absolute;
+	bottom: 20px;
+	left: 280px;
+}
+
+#num li:hover {
+	background-color: white;
+}
+
+#num li.active {
+	background-color: white;
+}
+.yangpinbt{background: rgba(255,255,255,0.8);position: absolute;width: 70px;height:30px;text-align: center;font-size: 16px;line-height: 30px;bottom: 10px;left: 10px;}
+/* box */
+.anli{width: 100%;height:auto;padding-top:50px;}
+	
+.glass3{width: 100%;height: 700px; padding-top: 40px;hidden;}
+.demo4{width: 100%;margin: 0 auto;position: relative;}
+.tab_menu{width:1200px;height: 50px;position:relative;z-index: 2;margin: 0 auto;}
+.tab_menu li{width:82px;height:30px;line-height:30px;text-align:center;cursor:pointer;font-size: 16px;color: white;font-weight: lighter;overflow: hidden;float: left;margin-top: 40px;margin-left: 20px;}
+
+.tab_menu li.active{color:#333;background:white;}
+
+.tab_menu li{text-decoration:none;position: relative;font-family: "微软雅黑";}
+.glass_bt{font-size: 40px;text-align: center;margin-bottom: 50px;font-family: "微软雅黑";color: #666}
+.anlims{width:48%;height: 600px;float:right;}
+.tab_box{width: 100%;height: 600px;background: #191919;float: left;z-index: 1;position: absolute;overflow: hidden;}
+.tab_box .hide{display:none;}
+.glass3_ms_bt{color: white;margin-top: 180px;margin-left: 60px; font-size: 30px;font-family: "微软雅黑";font-weight: lighter;}
+.glass3_ms_nr{width: 75%; color: #D9D9D9;margin-left: 60px;font-size: 16px;font-family: "微软雅黑";margin-top: 50px;line-height: 1.4;margin-bottom: 30px;text-align: justify;}
+.glass3_ms_know{background: #60aff6;margin-left: 60px;margin-top:20px;font-size: 18px;text-align: center;line-height: 40px;color: white;font-family:"微软雅黑";padding: 5px 20px; }
+.glass3_ms_know:hover{background: #0B74D5;}
+.glass4{width: 1200px;height: 550px;background:white;font-weight: normal;font-size: 16px;margin: 0 auto}
+.ul>li{float: left;padding-top:50px; }
+.div1{width:400px;height: 400px;}
+.div2{width:800px;height: 400px;}
+.div2>img{position: absolute;}
+
+
+.dov{width: 1200px;height: 760px;margin: 0 auto;}
+#demo{width:700px;;height:80px; overflow:hidden;position: relative;padding-top:20px;margin-left: 30px;}
+/* - - - - - - - - - - */
+.color{margin: 0;text-align: left;float: left;line-height: 45px;color: #666666}
+.slide{width: 700px;float: left;}
+.slide .pane{text-align:center;z-index:1;overflow:hidden;position: absolute;bottom: 0px;width: 100%;padding-left: 20%;}
+.slide.slide3 .icons{height:50px;text-align:center;width:auto;overflow: hidden;box-sizing: border-box;padding-top: 6px;}
+.icontxt{float: left;color: #333;font-size: 14px;margin-left: 4px;padding-top: 6px;}
+.icon{width: 24px;height: 24px;background: pink;border-radius: 50%;margin: 3px auto;box-sizing: content-box}
+.icon_out{width: 30px;height: 30px;border-radius: 50%;border: 2px #E8E8E8 solid;float: left;margin-left: 20px;}
+.icon_this{border: 2px #999 solid;}
+.slide.slide3 .arrowcontainer{position:relative;}
+.slide.slide3 .arrow{color:#FFFFFF;font-size:150%;left:160px;position:absolute;top:-90px;width:130px;font-weight:bold;}
+.slide.slide3 .arrow img{float:right;}
+.slide.slide3 .icons img{cursor:pointer;display:block;float:left;margin:0;padding:10px;}
+.slide.slide3 .content2,.slide.slide3 .content3,.slide.slide3 .content4,.slide.slide3 .content5{display:none}
+.slide{background-position: left;background-repeat: no-repeat;}
+.slide.slide3.s1{background-image:url(../images/filmwhite.jpg);}
+.selected{background: red;}
+.slide.slide3.s2{background-image:url(../images/filmblack.jpg);}
+.slide.slide3.s3{background-image:url(../images/filmblue.jpg);}
+.slide.slide3.s4{background-image:url(../images/filmgreen.jpg);}
+.slide.slide3.s5{background-image:url(../images/filmyellow.jpg);}
+.slide.slide3.s6{background-image:url(../images/filmgray.jpg);}
+.slide.slide3.s7{background-image:url(../images/filmred.jpg);}
+.tec1{width: 100%; height:472px;background-image:url(../images/yuanli1.gif);background-position:center top;background-repeat:no-repeat}
+.tec2{width: 100%; height:579px;background-image:url(../images/yuanli2.jpg);background-position:center top;background-repeat:no-repeat}
+.tec3{width: 100%; height:422px;background-image:url(../images/yuanli4.jpg);background-position:center top;background-repeat:no-repeat}
+.tec4{width: 100%; height:538px;background-image:url(../images/mocanshu.jpg);background-position:center top;background-repeat:no-repeat}
+
+
+/*参数重新编写*/
+
+.canshu{width: 100%;height: 780px;}
+.canshuul{width: 1200px;height: 780px;margin: 0 auto;}
+.canshuul>p{    font-size: 40px;
+    text-align: center;margin-top: 50px;font-family: "微软雅黑";color: #666;}
+.canshuul>li{width: 600px;float: left;}
+.canshuul>.canshuli1{width: 580px;height: 720px;}
+
+.page2-ul1{width: 580px;height: auto;margin-top:50px;margin-left: 20px}
+.page2-ul1>li{float: left;width: 300px;height: 31.5px;}
+.page2-ul1>.page2-hui{width: 290px;background: #676767;color: #fff}
+.page2-ul1>.page2-lan{width: 290px;background: #fff;}
+.page2-ul1>.page2-hui1>span{margin-left: 30px;display: inline-block;margin-top:6px;font-size: 15px;letter-spacing: 1px}
+.page2-ul1>.page2-lan1>span{margin-left: 30px;display: inline-block;margin-top:6px;font-size: 15px;letter-spacing: 1px;}
+
+
+
+.dov1{float: left;width: 400px;padding-top: 100px;box-sizing: border-box;padding-left: 40px;}
+.dov1 h2{font-weight: normal;text-align: left;font-size: 28px;}
+.dov1>p{ margin-top:4px;font-size: 15px;color: #424242}
+.dov1>p>.class{width: 160px;height: 20px;display: inline-block;padding-top:4px; }
+#DOV2>a>p{text-align:center;font-size:20px;padding-top:90px;color: #000;}
+#DOV2>a>p:hover{color:#00c3f5;cursor: pointer;}
+#DOV3{width: 100%;height:579px;background: black;}
+#DOV3-1{width: 1200px;height:579px;margin: 0 auto;}
+#DOV3-1>li{float: left;}
+#DOV3-1>.li{width: 730px;height: 579px;    padding-top: 50px;}
+#DOV3-1>.li1{width: 400px;height: 579px;background: black;}
+#DOV4{width: 100%;height:472px;background: #2c2c38;}
+#DOV4-1{width: 1200px;height:472px;margin: 0 auto;}
+#DOV4-1>li{float: left;}
+#DOV4-1>.li{width: 700px;height: 472px;}
+#DOV4-1>.li1{width: 500px;height: 472px;background: #2c2c38; }
