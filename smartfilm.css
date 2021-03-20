@@ -1,0 +1,155 @@
+.flex-container-smartfilm{
+	display: flex;
+	flex-direction: row;
+	padding:5vh 10vw 10vh;
+	width:100%;
+	min-height: 80vh;
+}
+.bg-blur{
+	background-image:url('http://www.hohotint.com/statics/hohofilm/images/filmbc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img-div img{
+	width:100%;
+	height: auto;
+	min-width: 40vw;
+}
+.smartfilm-content-1{
+	padding: 40px 20px;
+}
+.smartfilm-content-1{
+	color:#fff;
+}
+.smartfilm-content-1 h2{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.smartfilm-content-2{
+	padding: 20px 20px 40px 20px;
+}
+.smartfilm-content-2 h2{
+	color: #333;
+	margin-bottom: 20px;
+	border-left: 4px solid #f9152b;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+h1{
+	font-size: 35px;
+	text-align: center;
+	color:#333;
+    padding: 20px 0px;
+}
+.smartfilm-content-2 ul{
+ 	padding:0;
+ 	list-style: none;
+ 	font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.smartfilm-content-2 ul li:before{
+	vertical-align: middle;
+	content: "\2022";
+    color: #ff3a4d;
+    width: 7rem;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.slide-content-smartfilm {
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 0px 5px;
+    background: #fff;
+    bottom: 1%;
+    left: 1%;
+    opacity: 0.8;
+}
+.img-div-2{
+	width:100%;
+	height: auto;
+	min-width: 40vw;
+	padding-top: 40px;
+}
+.mySlides img {
+    vertical-align: middle;
+    height: 70vh;
+    max-height: 50vh;
+    width: auto;
+}
+.no-padding-top{
+/*padding: 0vh 3vw 10vh 10vh;*/
+padding:0;
+}
+.tab-smart-film{
+	position: absolute;
+	right: 10%;
+	margin-top: 15px;
+    margin-right: auto;
+}
+.tab-smart-film button{
+	cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 75px;
+    background: #fff;
+    color: black;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.tabcontent-container{
+	width:100%;
+	flex-direction: row;
+	/*padding: 50px;*/
+	padding: 60px 20px 0px 20px;
+}
+.tabcontent img{
+	width:100%;
+	height: auto;
+}
+.tabcontent-2{
+	display: none;
+}
+.bg-dark{
+	background:black;
+}
+@media only screen and (max-width: 500px) {
+	.flex-container-smartfilm{
+	flex-direction: column;
+	}
+	.img-div{
+		width: 100%;
+	}
+	.img-div img{
+		min-width: unset;
+	}
+	.smartfilm-content-1{
+		padding: 20px;
+	}
+	.img-div-2{
+		padding-top: unset;
+	}
+	.tab-smart-film{
+		margin-left: auto;
+		margin-right: auto;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.p2{
+		padding: 20px;
+	}
+	.tab-smart-film button {
+    min-width: 60px;
+    background: #fff;
+    margin-top: 5px;
+    border: none;
+    padding: 5px;
+    }
+}
