@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The root */
+*{
+  box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+}
+
+ul{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  list-style-type: none;
+}
+.dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    /* padding pareng & child*/
+    padding: 8px;
     position: relative;
+}
+
+/* The sub dropdown */
+.dropdown-menu ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    /*width: 200px;*/
+    white-space: nowrap;
+}
+
+/* The second level sub dropdown */
+.dropdown-menu ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.dropdown-menu li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown-menu li:hover > ul {
+    display: block;
+}
+</style></head>
+<body>
+
+
+<ul class="dropdown-menu">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Patterns v
+        <ul>
+            <li>Layout</li>
+            <li>Input</li>
+            <li>Navigation >
+                <ul>
+                    <li>Breadcrumb</li>
+                    <li>Dropdown</li>
+                    <li>Menu</li>
+                    <li>Nested dropdown</li>
+                </ul>
+            </li>
+            <li>Display</li>
+            <li>Feedback</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
