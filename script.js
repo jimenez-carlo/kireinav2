@@ -26,7 +26,7 @@ function send_email() {
   email_body += "\nPhone: "+phone;
   email_body += "\nMessage:"+message;
   $.ajax({
-  url: "https://formspree.io/f/YOUR_FORM_ID",
+  url: "https://formspree.io/f/xoqpgwoa",
   method: "POST",
   dataType: "json",
   data: {
