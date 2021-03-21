@@ -30,6 +30,7 @@ function send_email() {
   xhttp.onreadystatechange = function() {
   };
   xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
+  xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("message="+email_body+"&"+email);
     alert("Message has been sent!");
