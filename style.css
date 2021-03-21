@@ -462,6 +462,26 @@ footer .sub-footer p{
   outline: none;
 }
 
+.form{
+  font-size: 12px  
+}
+.form textarea,.form input{
+  display:  block;
+  width: 100%;
+}
+.contact-item{
+  width:100%;
+}
+.contact-main-form{
+  padding: 0px 50px!important;
+}
+.contact-main-container{
+  padding: 10vh 10vw;
+}
+.contact-item img{
+  width: 100%;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
@@ -584,6 +604,13 @@ footer .sub-footer p{
       font-size: 12px!important;
       padding: 0px!important;
   }
+  .contact-main-form {
+    padding: 0px 30px!important;
+}
+
+.contact-item h5{
+  font-size:20px; 
+}
 }
 
 
@@ -832,22 +859,3 @@ footer .sub-footer p{
 }
 /* CALINAYA TRY CSS */
 
-.form{
-  font-size: 12px  
-}
-.form textarea,.form input{
-  display:  block;
-  width: 100%;
-}
-.contact-item{
-  width:100%;
-}
-.contact-main-form{
-  padding: 0px 50px!important;
-}
-.contact-main-container{
-  padding: 10vh 10vw;
-}
-.contact-item img{
-  width: 100%;
-}
