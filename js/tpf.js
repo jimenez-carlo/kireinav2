@@ -1,1 +1,0 @@
-;var _ta_tpf = {"setting":[{"form_type":0,"form_id":47677,"url":["http:\/\/www.hohotint.com\/"],"fields":[],"submit_btn":""}],"base_url":"https:\/\/api.socialarks.com\/TouchPoint\/Outgoing\/form?version=sales&company_id=11737&form_id="};
