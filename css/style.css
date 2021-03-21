@@ -216,7 +216,7 @@ nav ul li.dropdown {
 }
 
 /* Style the buttons inside the tab */
-.btn {
+.contact-form-btn {
     cursor: pointer;
     transition: 0.3s;
     font-size: 14px;
@@ -242,7 +242,7 @@ nav ul li.dropdown {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover,.btn:hover,.btn:hover{
+.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover,.btn:hover,.btn:hover,.contact-form-btn:hover{
   color:#fff;
   background-color: #b73333;
 }
@@ -576,12 +576,13 @@ footer .sub-footer p{
   footer .header ul:nth-child(3){
       display:  none;
   }
-  footer .sub-footer p{
-  margin:0px 1vw;
-  }
   footer .logo{
     display: none;
   }
+  footer .sub-footer p{
+  margin:0px 1vw;
+  }
+  
 
   .footer-logo{
     height: 70px;

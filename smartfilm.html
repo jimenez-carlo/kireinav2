@@ -3,8 +3,8 @@
 <head>
   <title>Kireina Tint</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="smartfilm.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/smartfilm.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://use.fontawesome.com/04c54441e6.js"></script>
@@ -318,12 +318,32 @@
     </div>
   </footer>
   <script>
+        // Index Carousel
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slide-pagination");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
        window.onload=function() {
       docid('defaultOpen').click();
       docid('defaultOpen-2').click();
    }
   </script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="smartfilm.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/smartfilm.js"></script>
 </body>
 </html>
