@@ -29,7 +29,7 @@ function send_email() {
   email_body += "\nMessage:"+message;
   xhttp.onreadystatechange = function() {
   };
-  xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", false);
+  xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
   xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
