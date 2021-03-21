@@ -215,6 +215,16 @@ nav ul li.dropdown {
 }
 
 /* Style the buttons inside the tab */
+.btn {
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 100px;
+    background: #ccc;
+    color: #fff;
+    padding: 10px;
+    width:100%;
+}
 .tab button {
     cursor: pointer;
     transition: 0.3s;
@@ -231,7 +241,7 @@ nav ul li.dropdown {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover,.btn:hover{
+.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover,.btn:hover,.btn:hover{
   color:#fff;
   background-color: #b73333;
 }
@@ -836,4 +846,7 @@ footer .sub-footer p{
 }
 .contact-main-container{
   padding: 10vh 10vw;
+}
+.contact-item img{
+  width: 100%;
 }

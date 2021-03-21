@@ -29,12 +29,12 @@
 		<div class="flex-container contact-main-container">
 			<div class="contact-item contact-main-form">
 				<h5>Contact Us</h5>
-				<form action="" class="form">
+				<form action="" class="form" method="post" id="message-form">
 					*Name  <input type="text" name="name" id="name">
 					*Email <input type="text" name="email" id="email">
 					*Phone <input type="text" name="phone" id="phone">
-					*Message <textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<button type="button">Send</button>
+					*Message <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+					<button type="button" class="btn"  onclick="send_email();"><i class="fa fa-envelope"></i> Send Email</button>
 				</form>
 			</div>
 			<div class="contact-item">
@@ -47,23 +47,6 @@
 	</section>
 
 
-	
-
-	<button class="contact-btn" onclick="openForm()" id="message-btn"><i class="fa fa-envelope"></i> Message Us</button>
-	<div class="chat-popup" id="contact-form">
-	  <form action="#" class="contact-container">
-	  	<div><a href="javascript:void(0)"  onclick="closeForm()"><i class="fa fa-window-minimize"></i></a></div>
-	    Name:
-	    <input type="text" name="name" required>
-	    Email:
-	    <input type="email" name="email" required>
-	    Phone:
-	    <input type="text" name="phone" required>
-	    Message:
-	    <textarea placeholder="Enter Message Here!" name="message" required></textarea>
-	    <button type="submit" class="contact-btn-submit"><i class="fa fa-paper-plane-o"></i> Send</button>
-	  </form>
-	</div>
 	<footer>
 		<div class="container">
 		<div class="logo"><img class="footer-logo" src="images/logo-red-white.png" ></div>
