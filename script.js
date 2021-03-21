@@ -67,12 +67,10 @@ function send_email() {
   email_body += "\nPhone: "+phone;
   email_body += "\nMessage:"+message;
   xhttp.onreadystatechange = function() {
-    alert("Message has been sent!");
-    // if (this.readyState == 4 && this.status == 200) {
-    // }
-    docid("contact-form").reset();
   };
   xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("message="+email_body+"&"+email);
+    alert("Message has been sent!");
+    docid("message-form").reset();
 }
