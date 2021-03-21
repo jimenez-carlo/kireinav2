@@ -30,12 +30,14 @@ function send_email() {
   method: "POST",
   dataType: "json",
   data: {
-    email: email,
-    message: email_body
+    Name:name,
+    Phone:phone,
+    Message: message,
+    From: email
   }
 });
-      alert("Message has been sent!");
-    docid("message-form").reset();
+  alert("Message has been sent!");
+  docid("message-form").reset();
   /*
   //Native javascript ajax 
   var xhttp = new XMLHttpRequest();
