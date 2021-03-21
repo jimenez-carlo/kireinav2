@@ -37,3 +37,33 @@ function send_email() {
     alert("Message has been sent!");
     docid("message-form").reset();
 }
+
+var form = document.getElementById("message-form");
+    
+    async function handleSubmit(event) {
+    var name    = docid('name')   .value;
+    var phone   = docid('phone')  .value;
+    var message = docid('message').value;
+    var email   = docid('email')  .value;
+    var email_body ="";
+  email_body = "Email: "+email;
+  email_body = "\nName: "+name;
+  email_body += "\nPhone: "+phone;
+  email_body += "\nMessage:"+message;
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: {'message':email_body,'email':email},
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)

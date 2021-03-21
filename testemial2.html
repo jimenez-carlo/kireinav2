@@ -4,51 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=	, initial-scale=1.0">
 	<title>Document</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
-<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<!-- modify this form HTML and place wherever you want your form -->
+
+<form id="my-form" action="https://formspree.io/f/xoqpgwoa" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" />
+  <label>Message:</label>
+  <input type="text" name="message" />
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</form>
+
+<!-- Place this script at the end of the body tag -->
+
 <script>
-  /* paste this line in verbatim */
-  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-
-  /* customize formbutton below*/     
-  formbutton("create", {
-    action: "https://formspree.io/f/xoqpgwoa",
-    title: "How can we help?",
-    fields: [
-    { 
-        type: "text", 
-        label: "Name:", 
-        name: "email",
-        required: true,
-        placeholder: "San juan"
-      },
-      { 
-        type: "email", 
-        label: "Email:", 
-        name: "email",
-        required: true,
-        placeholder: "your@email.com"
-      },
-      {
-        type: "textarea",
-        label: "Message:",
-        name: "message",
-        placeholder: "What's on your mind?",
-      },
-      { type: "submit" }      
-    ],
-    styles: {
-      title: {
-        backgroundColor: "gray"
-      },
-      button: {
-        backgroundColor: "gray"
-      }
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
     }
-  });
+    form.addEventListener("submit", handleSubmit)
 </script>
-
 </body>
 </html>
