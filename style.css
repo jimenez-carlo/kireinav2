@@ -501,6 +501,7 @@ footer .sub-footer p{
   .tab{
     margin: 0!important;
     padding: 0px 50px;
+      padding-bottom: 20px;
   }
   .about-content,.about-img{
     width:  100%;
