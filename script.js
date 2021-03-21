@@ -54,3 +54,24 @@ function closeForm() {
 }
 // Contact Us End
 
+
+function send_email() {
+  //Native javascript ajax 
+  var xhttp = new XMLHttpRequest();
+  var name    = docid('name')   .value;
+  var phone   = docid('phone')  .value;
+  var message = docid('message').value;
+  var email   = docid('email')  .value;
+  var email_body ="";
+  email_body = "Name: "+name;
+  email_body += "\nPhone: "+phone;
+  email_body += "\nMessage:";
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      alert("Message has been sent!");
+    }
+  };
+  xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("message="+email_body+"&"+email);
+}

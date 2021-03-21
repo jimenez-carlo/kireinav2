@@ -171,19 +171,36 @@
 		</div>
 		
 	</div>
+	<form
+  action="https://formspree.io/f/xoqpgwoa"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
 	<button class="contact-btn" onclick="openForm()" id="message-btn"><i class="fa fa-envelope"></i>  Message Us</button>
 	<div class="chat-popup" id="contact-form">
-		<form action="#" class="contact-container">
+		<form class="contact-container" method="post">
 			<div><a href="javascript:void(0)"  onclick="closeForm()"><i class="fa fa-window-minimize"></i></a></div>
 			Name:
-			<input type="text" name="name" required>
+			<input type="text" name="name" id="name" required>
 			Email:
-			<input type="email" name="email" required>
+			<input type="email" name="email" id="email"required>
 			Phone:
-			<input type="text" name="phone" required>
+			<input type="text" name="phone" id="phone" required>
 			Message:
-			<textarea placeholder="Enter Message Here!" name="message" required></textarea>
-			<button type="submit" class="contact-btn-submit"><i class="fa fa-paper-plane-o"></i> Send</button>
+			<textarea placeholder="Enter Message Here!" name="message"  id="message" required></textarea>
+			<button type="button" class="contact-btn-submit" onclick="send_email();"><i class="fa fa-paper-plane-o"></i> Send</button>
 		</form>
 	</div>
 	<footer>
