@@ -4,45 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=	, initial-scale=1.0">
 	<title>Document</title>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-	<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
-<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xoqpgwoa"
+  method="POST"
+>
+ <label>
+ 	 <label>
+    Your phone:
+    <input type="text" name="phone">
+  </label>
+    Your name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
 
-<form id="my-form" action="https://formspree.io/f/xoqpgwoa" method="POST">
-  <label>Email:</label>
-  <input type="email" name="email" />
-  <label>Message:</label>
-  <input type="text" name="message" />
-  <button id="my-form-button">Submit</button>
-  <p id="my-form-status"></p>
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
 </form>
-
-<!-- Place this script at the end of the body tag -->
-
-<script>
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-</script>
 </body>
 </html>

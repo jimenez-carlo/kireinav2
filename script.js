@@ -16,6 +16,27 @@ function closeForm() {
 
 
 function send_email() {
+  var name    = docid('name')   .value;
+  var phone   = docid('phone')  .value;
+  var message = docid('message').value;
+  var email   = docid('email')  .value;
+  var email_body ="";
+  email_body = "Email: "+email;
+  email_body = "\nName: "+name;
+  email_body += "\nPhone: "+phone;
+  email_body += "\nMessage:"+message;
+  $.ajax({
+  url: "https://formspree.io/f/YOUR_FORM_ID",
+  method: "POST",
+  dataType: "json",
+  data: {
+    email: email,
+    message: email_body
+  }
+});
+      alert("Message has been sent!");
+    docid("message-form").reset();
+  /*
   //Native javascript ajax 
   var xhttp = new XMLHttpRequest();
   var name    = docid('name')   .value;
@@ -35,35 +56,6 @@ function send_email() {
   xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
   xhttp.send("message="+email_body+"&"+email);
     alert("Message has been sent!");
-    docid("message-form").reset();
+    docid("message-form").reset();*/
 }
 
-var form = document.getElementById("message-form");
-    
-    async function handleSubmit(event) {
-    var name    = docid('name')   .value;
-    var phone   = docid('phone')  .value;
-    var message = docid('message').value;
-    var email   = docid('email')  .value;
-    var email_body ="";
-  email_body = "Email: "+email;
-  email_body = "\nName: "+name;
-  email_body += "\nPhone: "+phone;
-  email_body += "\nMessage:"+message;
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: {'message':email_body,'email':email},
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
