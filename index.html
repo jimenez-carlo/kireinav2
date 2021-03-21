@@ -3,10 +3,12 @@
 <head>
 	<title>Kireina Tint</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<script src="js/aos.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<script src="https://use.fontawesome.com/04c54441e6.js"></script>
 	<!-- 
 		Lead Web designer: Jimenez, Carlo
@@ -42,9 +44,7 @@
 		</ul>
 	</nav>
 	<section>
-
-		<div class="slideshow-container">
-
+		<div class="slideshow-container" data-aos="zoom-in">
 			<div class="mySlides fade">
 				<img src="https://www.hohotint.com/statics/hohofilm/images/banner1.gif" style="width:100%">
 			</div>
@@ -76,10 +76,10 @@
 	</section>
 	<section>
 		<div class="tab-container">
-			<div class="product-header">
+			<div class="product-header" data-aos="fade-up">
 				<h2>KIREINA PRODUCTS</h2>
 			</div>
-			<div class="tab">
+			<div class="tab" data-aos="fade-up">
 				<button class="tablinks" onclick="openCity(event, 't1')" id="defaultOpen">Automotive Film</button>
 				<button class="tablinks" onclick="openCity(event, 't2')">Building Window Film</button>
 				<button class="tablinks" onclick="openCity(event, 't3')">Car Paint Protection Film</button>
@@ -88,11 +88,11 @@
 		<div class="tabcontent-container">
 			<div id="t1" class="tabcontent">
 				<div class="grid-container"> 
-					<div class="item item-1"><img src="https://www.hohotint.com/statics/hohofilm/images/now/gc1.jpg" alt=""></div>
-					<div class="item item-2"><img src="https://www.hohotint.com/statics/hohofilm/images/now/2.jpg" alt=""></div>
-					<div class="item item-3"><img src="https://www.hohotint.com/statics/hohofilm/images/now/3.jpg" alt=""></div>
-					<div class="item item-4"><img src="https://www.hohotint.com/statics/hohofilm/images/now/4.jpg" alt=""></div>
-					<div class="item item-5"><img src="https://www.hohotint.com/statics/hohofilm/images/now/5.jpg" alt=""></div>
+					<div class="item item-1"><img src="https://www.hohotint.com/statics/hohofilm/images/now/gc1.jpg" alt="" data-aos="flip-left"></div>
+					<div class="item item-2"><img src="https://www.hohotint.com/statics/hohofilm/images/now/2.jpg" alt="" data-aos="flip-left"></div>
+					<div class="item item-3"><img src="https://www.hohotint.com/statics/hohofilm/images/now/3.jpg" alt="" data-aos="flip-left"></div>
+					<div class="item item-4"><img src="https://www.hohotint.com/statics/hohofilm/images/now/4.jpg" alt="" data-aos="flip-left"></div>
+					<div class="item item-5"><img src="https://www.hohotint.com/statics/hohofilm/images/now/5.jpg" alt="" data-aos="flip-left"></div>
 				</div>
 			</div>
 
@@ -117,12 +117,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-section bg-dark" style="background: black"	>
+	<section class="about-section bg-dark" style="background: black">
 		<div class="about-header">
 			<h2>ABOUT KIREINA</h2>
 		</div>
 		<div class="about-container">
-			<div class="about-content">
+			<div class="about-content" data-aos="fade-left">
 				<h4>Kireina Industry Co., Ltd.</h4>
 				<p>Kireina Industry Co., Ltd. is one of the earliest manufacturers engaged in researching, developing, producing and selling smart film and smart glass. We commit ourselves to the field of global construction materials, home automation ,windows, doors and glass, automotive and supporting theses fields with high quality smart films and smart glass. Kireina films consist of imported high permeability liquid crystal film and high quality automotive float glass. Our products have been guaranteed quality management ISO9001 and environmental management system ISO14001. Transmittance is up to 82% （average is 77% , domestic）, hazy degree is less than 3.4%, (average is 4.5%,domestic). The power rating is less than 4W/sqm. All the parameters are superior than international level.</p>
 
@@ -131,7 +131,7 @@
 
 			</div>
 			<div class="about-img">	
-				<img src="images/logo-building.jpg">
+				<img src="images/logo-building.jpg" data-aos="fade-right">
 			</div>	
 		</div>
 	</section>
@@ -266,5 +266,6 @@ function openCity(evt, cityName) {
 docid("defaultOpen").click();
 
 	</script>
+
 </body>
 </html>

@@ -3,10 +3,12 @@
 <head>
   <title>Kireina Tint</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/smartfilm.css">
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <script src="js/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://use.fontawesome.com/04c54441e6.js"></script>
   <!-- 
     Lead Web designer: Jimenez, Carlo
@@ -31,13 +33,13 @@
     </ul>
   </nav>
   <section>
-  <div class="flex-container-smartfilm bg-blur">
+  <div class="flex-container-smartfilm bg-blur" data-aos="zoom-out">
     <div class="img-div">
-      <img src="http://www.hohotint.com/statics/hohofilm/images/filma.gif" alt="loading image">
+      <img src="http://www.hohotint.com/statics/hohofilm/images/filma.gif" alt="loading image" data-aos="flip-left" >
     </div>
     <div class="smartfilm-content-1">
-      <h2>KIREINA SMART FILM</h2>
-      <p>PDLC Film consists of a polymer matrix of liquid crystals enclosed by electrically conductive Indium Tin Oxide-coated PET film. The resulting PDLC Film has wiring attached to a conductive copper strip (busbar) along the film’s edge. This wiring isconnected to a step-down transformer through which power is supplied for the “on” (clear) state.</p>
+      <h2 data-aos="fade-up">KIREINA SMART FILM</h2>
+      <p data-aos="fade-up">PDLC Film consists of a polymer matrix of liquid crystals enclosed by electrically conductive Indium Tin Oxide-coated PET film. The resulting PDLC Film has wiring attached to a conductive copper strip (busbar) along the film’s edge. This wiring isconnected to a step-down transformer through which power is supplied for the “on” (clear) state.</p>
     </div>
     
   </div>
@@ -45,8 +47,8 @@
   <section>
     <div class="flex-container-smartfilm">
     <div class="smartfilm-content-2">
-      <h2>General Notes</h2>
-      <ul>
+      <h2 data-aos="fade-left">General Notes</h2>
+      <ul data-aos="fade-left">
         <li><b>Privacy Protection and Room Partition : </b>The first function is privacy protection . Transform from opaque barrier to a clear state. Allows architects and contractors to provide creative design concepts on demand .</li>
         <li><b>Rear Projection Screen : </b>Great solution for a rear-projection screen with high contrast.</li>
         <li><b>Explosion- proof : </b>No distraction of shutters blinds or drapes.</li>
@@ -56,7 +58,7 @@
       </ul>
     </div>
     <div class="img-div-2">
-      <div class="slideshow-container">
+      <div class="slideshow-container" data-aos="fade-right">
       <div class="mySlides fade">
         <img src="http://www.hohotint.com/statics/hohofilm/images/film4.jpg" style="width:100%">
         <div class="slide-content-smartfilm">TESTING</div>
@@ -71,7 +73,7 @@
   </div>
   </section>
   <section>
-  <h1>APPLICATIONS</h1>
+  <h1 data-aos="fade-up">APPLICATIONS</h1>
   </section>
    <section>
     <div class="flex-container-smartfilm no-padding-top bg-dark">
@@ -82,8 +84,8 @@
         <button class="tablinks" onclick="smartfilm_tab(event, 't4')">Public</button>
         <button class="tablinks" onclick="smartfilm_tab(event, 't5')">Display</button>
       </div>
-    <div class="tabcontent-container">
-      <div id="t1" class="tabcontent">
+    <div class="tabcontent-container" data-aos="flip-left">
+      <div id="t1" class="tabcontent"style="display:block">
         <img src="http://www.hohotint.com/statics/hohofilm/images/bangong.gif" alt="loading image">
       </div>
       <div id="t2" class="tabcontent">
@@ -100,10 +102,10 @@
       </div>
     </div>
     <div class="tabcontent-container p2">
-      <div id="sub_t1" class="tabcontent-2">
-      <h2>Municipal Unit Project Cases</h2>
-      <p>Kireina smart film applications in conference makes your work easier. Besides, it also brings an extraordinary visual experience. We can also provide you with projection, touch and other functions according to your needs.</p>
-      <button class="btn">Details</button>
+      <div id="sub_t1" class="tabcontent-2" style="display: block">
+      <h2 data-aos="fade-up">Municipal Unit Project Cases</h2>
+      <p data-aos="fade-up">Kireina smart film applications in conference makes your work easier. Besides, it also brings an extraordinary visual experience. We can also provide you with projection, touch and other functions according to your needs.</p>
+      <button class="btn" data-aos="fade-up">Details</button>
       </div>
       <div id="sub_t2" class="tabcontent-2">
       <h2>Home Villa Project Case</h2>
@@ -129,12 +131,13 @@
   </div>
   </section>
     <section>
-  <h1>SPECIFICATIONS</h1>
+  <h1 data-aos="fade-up">SPECIFICATIONS</h1>
   </section>
    <section>
     <div class="flex-container-smartfilm no-padding-top">
-    <div class="tabcontent-container container-2">
-      <div id="t6" class="tabcontent-3">
+    <div class="tabcontent-container container-2" data-aos="flip-left"> 
+      <div id="t6" class="tabcontent-3" style="
+      display:block">
         <img src="http://www.hohotint.com/statics/hohofilm/images/filmwhite.jpg" alt="loading image">
       </div>
       <div id="t7" class="tabcontent-3">
@@ -157,19 +160,19 @@
       </div>
       <div class="tab-smart-film-3">
         <div class="color-header">
-        <h2>COLOR :</h2>
+        <h2 data-aos="fade-up">COLOR :</h2>
         </div>
-        <button class="tablinks-2 clr-skyblue active" onclick="smartfilm_tab_2(event, 't6')" id="defaultOpen-2"></button>
-        <button class="tablinks-2 clr-black" onclick="smartfilm_tab_2(event, 't7')"></button>
-        <button class="tablinks-2 clr-blue" onclick="smartfilm_tab_2(event, 't8')"></button>
-        <button class="tablinks-2 clr-green" onclick="smartfilm_tab_2(event, 't9')"></button>
-        <button class="tablinks-2 clr-yellow" onclick="smartfilm_tab_2(event, 't10')"></button>
-        <button class="tablinks-2 clr-grey" onclick="smartfilm_tab_2(event, 't11')"></button>
-        <button class="tablinks-2 clr-pink" onclick="smartfilm_tab_2(event, 't12')"></button>
+        <button class="tablinks-2 clr-skyblue active" onclick="smartfilm_tab_2(event, 't6')" id="defaultOpen-2" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-black" onclick="smartfilm_tab_2(event, 't7')" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-blue" onclick="smartfilm_tab_2(event, 't8')" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-green" onclick="smartfilm_tab_2(event, 't9')" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-yellow" onclick="smartfilm_tab_2(event, 't10')" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-grey" onclick="smartfilm_tab_2(event, 't11')" data-aos="fade-up"></button>
+        <button class="tablinks-2 clr-pink" onclick="smartfilm_tab_2(event, 't12')" data-aos="fade-up"></button>
       </div>
     </div>
     <div class="tabcontent-container p2 container-2">
-      <table rules="none" width="100%">
+      <table rules="none" width="100%" data-aos="fade-right">
         <tr class="even">
           <td>Item</td>
           <td>Kireina Smart Film</td>
@@ -246,25 +249,23 @@
   <section>
   <div class="flex-container-smartfilm" style="background: #2c2c38">
     <div class="smartfilm-content-1 p-100">
-      <h2>TECHNOLOGY</h2>
-      <p style="font-size:17px">Smart dimming film is a liquid crystal display functional film that uses polymer dispersed liquid crystal (PDLC) as a display structure.</p>
+      <h2 data-aos="fade-up">TECHNOLOGY</h2>
+      <p style="font-size:17px" data-aos="fade-up">Smart dimming film is a liquid crystal display functional film that uses polymer dispersed liquid crystal (PDLC) as a display structure.</p>
     </div>
-    <div class="img-div">
+    <div class="img-div" data-aos="flip-left">
       <img src="http://www.hohotint.com/statics/hohofilm/images/li1-2.gif" alt="loading image">
     </div>
     
   </div>
   <section>
   <div class="flex-container-smartfilm bg-dark">
-    <div class="img-div">
+    <div class="img-div" data-aos="flip-left">
       <img src="http://www.hohotint.com/statics/hohofilm/images/li2.jpg" alt="loading image">
     </div>
     <div class="smartfilm-content-1 p-100">
-      <h2>PRINCIPLE</h2>
-      <p style="font-size:17px">When electricity is applied to the film via the wiring, the liquid crystals align and the window instantly becomes clear. When the power is turned off, the liquid crystals return to their normal scattered positions rendering the glass opaque.</p>
+      <h2 data-aos="fade-up">PRINCIPLE</h2>
+      <p style="font-size:17px" data-aos="fade-up">When electricity is applied to the film via the wiring, the liquid crystals align and the window instantly becomes clear. When the power is turned off, the liquid crystals return to their normal scattered positions rendering the glass opaque.</p>
     </div>
-    
-    
   </div>
   </section>
     <button class="contact-btn" onclick="openForm()" id="message-btn"><i class="fa fa-envelope"></i>  Message Us</button>

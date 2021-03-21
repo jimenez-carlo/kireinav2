@@ -40,3 +40,6 @@ function send_email() {
   docid("message-form").reset();
 }
 
+AOS.init({
+  duration: 1200,
+})
