@@ -787,7 +787,7 @@ footer .sub-footer p{
 }
 .item img{
  width:100%;
- height: 100%;
+ height: auto;
 }
 .span-3{
   grid-column: 1/4;
@@ -820,3 +820,20 @@ footer .sub-footer p{
 
 }
 /* CALINAYA TRY CSS */
+
+.form{
+  font-size: 12px  
+}
+.form textarea,.form input{
+  display:  block;
+  width: 100%;
+}
+.contact-item{
+  width:100%;
+}
+.contact-main-form{
+  padding: 0px 50px!important;
+}
+.contact-main-container{
+  padding: 10vh 10vw;
+}
