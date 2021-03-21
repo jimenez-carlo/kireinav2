@@ -65,13 +65,13 @@ function send_email() {
   var email_body ="";
   email_body = "Name: "+name;
   email_body += "\nPhone: "+phone;
-  email_body += "\nMessage:";
+  email_body += "\nMessage:"+message;
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      alert("Message has been sent!");
     }
   };
   xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("message="+email_body+"&"+email);
+  alert("Message has been sent!");
 }
