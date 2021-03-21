@@ -199,7 +199,10 @@ nav ul li.dropdown {
   padding:20px 0px 0px 20px;
   text-align:   center;
 }
-.about-header h2,.product-header h2{
+.product-header h2{
+    padding-bottom:20px 20px 0px 20px;  
+}
+.about-header h2{
     padding-bottom:20px;  
 }
 
@@ -486,7 +489,7 @@ footer .sub-footer p{
     margin-top: 20px;
   }
   .tab{
-    margin: 5vh 0 0;
+    margin: 0!important;
     padding: 0px 50px;
   }
   .about-content,.about-img{
