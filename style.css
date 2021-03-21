@@ -228,13 +228,13 @@ nav ul li.dropdown {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover{
+.tab button:hover,.contact-btn:hover,.view-more-btn:hover,.contact-btn-submit:hover,.tab-smart-film button:hover,.btn:hover{
   color:#fff;
   background-color: #b73333;
 }
 
 /* Create an active/current tablink class */
-.tab button.active,.tab-smart-film button.active {
+.tab button.active,.tab-smart-film button.active{
   color:#fff;
   background-color: #b73333;
 }
@@ -268,6 +268,16 @@ nav ul li.dropdown {
    /* make main axis horizontal (default setting) */
     justify-content: center; /* center items horizontally, in this case */
     align-items: center;  
+}
+.btn{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 100px;
+    background: #706f6f;
+    color: #fff;
+    border: none;
+    padding: 10px;
 }
 .view-more-btn{
     cursor: pointer;

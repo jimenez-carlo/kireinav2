@@ -16,7 +16,7 @@
 	min-width: 40vw;
 }
 .smartfilm-content-1{
-	padding: 40px 20px;
+	padding: 40px 40px;
 }
 .smartfilm-content-1{
 	color:#fff;
@@ -31,7 +31,6 @@
 }
 .smartfilm-content-2 h2{
 	color: #333;
-	margin-bottom: 20px;
 	border-left: 4px solid #f9152b;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -83,7 +82,7 @@ h1{
 }
 .no-padding-top{
 /*padding: 0vh 3vw 10vh 10vh;*/
-padding:0;
+	padding:0;
 }
 .tab-smart-film{
 	position: absolute;
@@ -109,15 +108,97 @@ padding:0;
 	/*padding: 50px;*/
 	padding: 60px 20px 0px 20px;
 }
-.tabcontent img{
+.container-2{
+	padding: 20px;
+}
+.tabcontent img,.tabcontent-3 img{
 	width:100%;
 	height: auto;
 }
 .tabcontent-2{
 	display: none;
+	padding-top: 30px;
+}
+.tabcontent-3{
+	display: none;
+}
+.tabcontent-2 >*{
+	margin-bottom:20px;
 }
 .bg-dark{
 	background:black;
+}
+.tab-smart-film-2{
+	position: absolute;
+	right: 10%;
+	margin-top: 15px;
+    margin-right: auto;
+}
+.tab-smart-film-2 button{
+	cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 75px;
+    background: #a8a2a2;
+    color: black;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.tab-smart-film-3 {
+	text-align:center;
+	    margin: 20px 0px;
+}
+.tab-smart-film-3 h2{
+	display: inline;
+	color:#333;
+	vertical-align: super;
+}
+.tab-smart-film-3 button{
+	border: 3px solid #958d8d;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.tab-smart-film-3 button:hover,.tab-smart-film-3 button:focus{
+cursor: pointer;
+outline: none;
+}
+.selected{
+	border: 3px solid #333!important;
+}
+.clr-skyblue{
+	background: #e7fbfa;
+}
+.clr-black{
+	background: black;
+}
+.clr-blue{
+	background: #2395f5;
+}
+.clr-green{
+	background: #9deccc;
+}
+.clr-yellow{
+	background: #f5fd90;
+}
+.clr-grey{
+	background: #989898;
+}
+.clr-pink{
+	background: pink;
+}
+td{
+	padding: 5px 20px;
+	width:50%;
+}
+.even{
+	color: #fff;
+	background: #333;
+}
+.p-100{
+	padding-top: 100px;
 }
 @media only screen and (max-width: 500px) {
 	.flex-container-smartfilm{
@@ -151,5 +232,12 @@ padding:0;
     margin-top: 5px;
     border: none;
     padding: 5px;
+    }
+    .color-header{
+    	width:100%;
+    	display: block;
+    }
+    .p-100{
+    	padding-top: 20px;
     }
 }
