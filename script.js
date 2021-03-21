@@ -24,7 +24,7 @@ function send_email() {
   var email   = docid('email')  .value;
   var email_body ="";
   email_body = "Email: "+email;
-  email_body = "Name: "+name;
+  email_body = "\nName: "+name;
   email_body += "\nPhone: "+phone;
   email_body += "\nMessage:"+message;
   xhttp.onreadystatechange = function() {
