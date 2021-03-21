@@ -31,8 +31,7 @@ function send_email() {
   };
   xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
   xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
-  // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.setRequestHeader('Content-type', 'application/ecmascript');
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
   xhttp.send("message="+email_body+"&"+email);
     alert("Message has been sent!");
