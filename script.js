@@ -30,9 +30,13 @@ function send_email() {
   xhttp.onreadystatechange = function() {
   };
   xhttp.open("POST", "https://formspree.io/f/xoqpgwoa", true);
-  xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+  // xhttp.setRequestHeader('Access-Control-Allow-Headers', '*');
+  // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  // xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+  xhttp.setHeader("Access-Control-Allow-Origin", "*");
+  xhttp.setHeader("Access-Control-Allow-Credentials", "true");
+  xhttp.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  xhttp.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
   xhttp.send("message="+email_body+"&"+email);
     alert("Message has been sent!");
     docid("message-form").reset();
