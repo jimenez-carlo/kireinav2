@@ -14,6 +14,7 @@ function smartfilm_tab(evt, cityName) {
   docid(cityName).style.display = "block";
   docid('sub_'+cityName).style.display = "block";
   evt.currentTarget.className += " active";
+    AOS.refresh();
 }
 
 function smartfilm_tab_2(evt, cityName) {
@@ -28,4 +29,5 @@ function smartfilm_tab_2(evt, cityName) {
   }
   docid(cityName).style.display = "block";
   evt.currentTarget.className += " selected";
+    AOS.refresh();
 }
