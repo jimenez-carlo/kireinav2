@@ -74,7 +74,7 @@ nav ul li a, .dropbtn {
   /*font-weight: bold;*/
 }
 
-nav ul li a:hover, .dropdown:hover .dropbtn {
+nav ul li a:hover, .dropdown:hover .dropbtn,.active-menu{
   /*background-color: red;*/
 
   border-bottom: 3px solid #b73333;
@@ -366,12 +366,14 @@ footer .header{
   flex-direction: row;
 }
 footer .header ul{
+  width:100%   ;
   float:  left;
   list-style:   none;    
   margin:0 25px;
 }
 footer .header ul li{
   padding:  4px;
+  text-align: left;
 }
 footer .container .header ul li a:hover{
     color:#b73333;
