@@ -246,6 +246,7 @@ function openCity(evt, cityName) {
   }
   docid(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+      AOS.refresh();
 }
 
 // Get the element with id="defaultOpen" and click on it
