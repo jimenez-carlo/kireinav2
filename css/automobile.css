@@ -2,6 +2,11 @@
 	height: auto;	
 	width: 	100%;
 }
+.ppf-header{
+	text-align: center;
+	min-height: 80vh;
+	padding: 40px 20vw;
+}
 .c{
 	text-align: center
 }
@@ -80,8 +85,10 @@ span{
 	background:#333;
 	color:#fff; 
 }
+.dt{
+	margin: auto!important;
+}
 table{
-	margin: auto;
 	width: 100%;
 	height: 100%;
 	border:1px solid;
@@ -92,18 +99,25 @@ tr{
 	color:#333	
 }
 td{
-	padding: 10px;; 
+	padding: 10px;
+	font-size: 17px;
 }
 .spImg{
 	background:#333; 
 	border:1px solid;
 	padding:0 12.5% ;
 	width:auto;
-
-	height: 316px;
-	height: 303.3px;
+	height: 303px;
 	object-fit: scale-down;
 	object-position: center;
+}
+.spImg2{
+	/*padding:0 3.5% ;*/
+	background: #333;
+    border: 1px solid;
+    height: 300px;
+    width:auto;
+    object-fit: scale-down;
 }
 .flex-container > div {
 
@@ -156,4 +170,10 @@ td{
     width: 100%;
     background-position: center;
 }
+.flex-container  div img{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    object-fit: scale-down;
+}
+
 }

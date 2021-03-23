@@ -20,6 +20,9 @@ font-family: sans-serif;
 background: #333;
 color:#fff;
 }
+.b{
+  font-weight: bold;
+}
 p{
   font-size: 14px;
   line-height: 24px;
@@ -491,6 +494,10 @@ footer .sub-footer p{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
+  /*.bg-building{
+    background-size: contain;
+    height: 10vh; 
+  }*/
   header{
     padding: 5px 25px;
   }
@@ -695,6 +702,10 @@ footer .header{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .contact-btn{
+    bottom: 10%;
+    right: 10%;
+}
   nav {
     padding: 5px 50px;
   }
@@ -772,6 +783,19 @@ footer .header{
   color:#fff;
   background:url('http://www.hohotint.com/statics/hohofilm/images/about1.jpg');
   background-size: cover:  
+}
+.bg-building{
+  color:#fff;
+  text-align: center;
+  background:url('../automobile/x37.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  padding: 30vh 0;
+  font-size: 30px;
+  font-weight: bold;
 }
 .bg-about img{
     width: 100%;
