@@ -781,13 +781,13 @@ footer .header{
   font-size: 90%;
   text-align: center;
   color:#fff;
-  background:url('http://www.hohotint.com/statics/hohofilm/images/about1.jpg');
+  background:url('../images/about1.jpg');
   background-size: cover:  
 }
 .bg-building{
   color:#fff;
   text-align: center;
-  background:url('../automobile/x37.jpg');
+  background:url('../images/x37.jpg');
   background-repeat: no-repeat;
   background-size: cover; 
   width: 100%;
