@@ -99,6 +99,8 @@ td{
 	border:1px solid;
 	padding:0 12.5% ;
 	width:auto;
+
+	height: 316px;
 	height: 303.3px;
 	object-fit: scale-down;
 	object-position: center;
