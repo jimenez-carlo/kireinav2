@@ -494,10 +494,10 @@ footer .sub-footer p{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
-  /*.bg-building{
-    background-size: contain;
-    height: 10vh; 
-  }*/
+  .bg-building{
+    padding-left:10px;
+    padding-right:10px;
+  }
   header{
     padding: 5px 25px;
   }
