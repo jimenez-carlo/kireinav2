@@ -74,7 +74,7 @@ span{
 	padding: 20px;	
 }
 .bg-automotive{
-	background: url('../automobile/automobile_header.png');
+	background: url('../images/automobile_header.png');
 	background-repeat: no-repeat;
 	background-size: cover; 
 	width: 100%;

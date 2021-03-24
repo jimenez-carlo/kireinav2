@@ -27,18 +27,18 @@
   <nav>
     <ul>
       <li class="header-logo2"><img class="logo" src="images/logo-circle-black.png"></li>
-      <li><a href="https://jimenez-carlo.github.io/KireinaTint/">Home</a></li>
+      <li><a href="https://kireinawindowfilms.com/">Home</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Film <i class="fa fa-caret-down"></i></a>
         <div class="dropdown-content">
-          <a href="https://jimenez-carlo.github.io/KireinaTint/ppf">PPF</a>
-          <a href="https://jimenez-carlo.github.io/KireinaTint/smartfilm">Smart Film</a>
-          <a href="https://jimenez-carlo.github.io/KireinaTint/automotive">Automotive Film</a>
-          <a href="https://jimenez-carlo.github.io/KireinaTint/building">Building Window Film</a>
+          <a href="https://kireinawindowfilms.com/ppf">PPF</a>
+          <a href="https://kireinawindowfilms.com/smartfilm">Smart Film</a>
+          <a href="https://kireinawindowfilms.com/automotive">Automotive Film</a>
+          <a href="https://kireinawindowfilms.com/building">Building Window Film</a>
         </div>
       </li>
-      <li><a href="https://jimenez-carlo.github.io/KireinaTint/about">About</a></li>
-      <li><a href="https://jimenez-carlo.github.io/KireinaTint/contact">Contact Us</a></li>
+      <li><a href="https://kireinawindowfilms.com/about">About</a></li>
+      <li><a href="https://kireinawindowfilms.com/contact">Contact Us</a></li>
     </ul>
   </nav>
   <section>
@@ -66,8 +66,8 @@
         <li><b>Multiple Control : </b>Different style controls like remote control, wall switch, light sensor, voice control, APP etc...</li>
       </ul>
     </div>
-    <div class="img-div-2">
-      <div class="slideshow-container" data-aos="fade-right">
+    <div class="img-div-2"  data-aos="fade-right">
+      <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="images/film4.jpg" style="width:100%">
         <div class="slide-content-smartfilm">TESTING</div>
@@ -298,14 +298,14 @@
       <div class="header">
         <ul>
           <li class="highlight">PRODUCTS</li>
-          <li><a href="https://jimenez-carlo.github.io/KireinaTint/smartfilm"><i class="fa fa-film">  </i> Smart Film</a></li>
-          <li><a href="https://jimenez-carlo.github.io/KireinaTint/ppf"><i class="fa fa-film">  </i> PPF</a></li>
-          <li><a href="https://jimenez-carlo.github.io/KireinaTint/automotive"><i class="fa fa-car">  </i> Automotive Film</a></li>
-          <li><a href="https://jimenez-carlo.github.io/KireinaTint/building"><i class="fa fa-building"> </i> Building Window Film</a></li>
+          <li><a href="https://kireinawindowfilms.com/smartfilm"><i class="fa fa-film">  </i> Smart Film</a></li>
+          <li><a href="https://kireinawindowfilms.com/ppf"><i class="fa fa-film">  </i> PPF</a></li>
+          <li><a href="https://kireinawindowfilms.com/automotive"><i class="fa fa-car">  </i> Automotive Film</a></li>
+          <li><a href="https://kireinawindowfilms.com/building"><i class="fa fa-building"> </i> Building Window Film</a></li>
         </ul>
         <ul>
           <li class="highlight">CONTACT US</li>
-          <li><a href="https://jimenez-carlo.github.io/KireinaTint/contact"><i class="fa fa-envelope"></i>  Message Us</a></li>
+          <li><a href="https://kireinawindowfilms.com/contact"><i class="fa fa-envelope"></i>  Message Us</a></li>
         </ul>
       </div>
     </div>
@@ -314,12 +314,47 @@
     </div>
   </footer>
   <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slide-pagination");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+// Index Carousel End
+// Index Tab
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  docid(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+      AOS.refresh();
+}
+
        window.onload=function() {
       docid('defaultOpen').click();
       docid('defaultOpen-2').click();
    }
   </script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/smartfilm.js"></script>
 </body>
 </html>
