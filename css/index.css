@@ -67,6 +67,8 @@ h3{
     background-image: url('https://www.hohotint.com/statics/hohofilm/images/now/6a.jpg');
     min-height: 400px;
     background-position:bottom; 
+    background-repeat: no-repeat;
+	  background-color: black;
 }
 #t3 h1{
 	padding: 40px 0px 5% 0px;
