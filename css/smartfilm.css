@@ -1,0 +1,243 @@
+.flex-container-smartfilm{
+	display: flex;
+	flex-direction: row;
+	padding:5vh 10vw 10vh;
+	width:100%;
+	min-height: 80vh;
+}
+.bg-blur{
+	background-image:url('http://www.hohotint.com/statics/hohofilm/images/filmbc.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img-div img{
+	width:100%;
+	height: auto;
+	min-width: 40vw;
+}
+.smartfilm-content-1{
+	padding: 40px 40px;
+}
+.smartfilm-content-1{
+	color:#fff;
+}
+.smartfilm-content-1 h2{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.smartfilm-content-2{
+	padding: 20px 20px 40px 20px;
+}
+.smartfilm-content-2 h2{
+	color: #333;
+	border-left: 4px solid #f9152b;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+h1{
+	font-size: 35px;
+	text-align: center;
+	color:#333;
+    padding: 20px 0px;
+}
+.smartfilm-content-2 ul{
+ 	padding:0;
+ 	list-style: none;
+ 	font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.smartfilm-content-2 ul li:before{
+	vertical-align: middle;
+	content: "\2022";
+    color: #ff3a4d;
+    width: 7rem;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.slide-content-smartfilm {
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 0px 5px;
+    background: #fff;
+    bottom: 1%;
+    left: 1%;
+    opacity: 0.8;
+}
+.img-div-2{
+	width:100%;
+	height: auto;
+	min-width: 40vw;
+	padding-top: 40px;
+}
+.mySlides img {
+    vertical-align: middle;
+    height: 70vh;
+    max-height: 50vh;
+    width: auto;
+}
+.no-padding-top{
+/*padding: 0vh 3vw 10vh 10vh;*/
+	padding:0;
+}
+.tab-smart-film{
+	position: absolute;
+	right: 10%;
+	margin-top: 15px;
+    margin-right: auto;
+}
+.tab-smart-film button{
+	cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 75px;
+    background: #fff;
+    color: black;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.tabcontent-container{
+	width:100%;
+	flex-direction: row;
+	/*padding: 50px;*/
+	padding: 60px 20px 0px 20px;
+}
+.container-2{
+	padding: 20px;
+}
+.tabcontent img,.tabcontent-3 img{
+	width:100%;
+	height: auto;
+}
+.tabcontent-2{
+	display: none;
+	padding-top: 30px;
+}
+.tabcontent-3{
+	display: none;
+}
+.tabcontent-2 >*{
+	margin-bottom:20px;
+}
+.bg-dark{
+	background:black;
+}
+.tab-smart-film-2{
+	position: absolute;
+	right: 10%;
+	margin-top: 15px;
+    margin-right: auto;
+}
+.tab-smart-film-2 button{
+	cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 75px;
+    background: #a8a2a2;
+    color: black;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.tab-smart-film-3 {
+	text-align:center;
+	    margin: 20px 0px;
+}
+.tab-smart-film-3 h2{
+	display: inline;
+	color:#333;
+	vertical-align: super;
+}
+.tab-smart-film-3 button{
+	border: 3px solid #958d8d;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.tab-smart-film-3 button:hover,.tab-smart-film-3 button:focus{
+cursor: pointer;
+outline: none;
+}
+.selected{
+	border: 3px solid #333!important;
+}
+.clr-skyblue{
+	background: #e7fbfa;
+}
+.clr-black{
+	background: black;
+}
+.clr-blue{
+	background: #2395f5;
+}
+.clr-green{
+	background: #9deccc;
+}
+.clr-yellow{
+	background: #f5fd90;
+}
+.clr-grey{
+	background: #989898;
+}
+.clr-pink{
+	background: pink;
+}
+td{
+	padding: 5px 20px;
+	width:50%;
+}
+.even{
+	color: #fff;
+	background: #333;
+}
+.p-100{
+	padding-top: 100px;
+}
+@media only screen and (max-width: 500px) {
+	.flex-container-smartfilm{
+	flex-direction: column;
+	}
+	.img-div{
+		width: 100%;
+	}
+	.img-div img{
+		min-width: unset;
+	}
+	.smartfilm-content-1{
+		padding: 20px;
+	}
+	.img-div-2{
+		padding-top: unset;
+	}
+	.tab-smart-film{
+		margin-left: auto;
+		margin-right: auto;
+		right: 0;
+		left: 0;
+		text-align: center;
+	}
+	.p2{
+		padding: 20px;
+	}
+	.tab-smart-film button {
+    min-width: 60px;
+    background: #fff;
+    margin-top: 5px;
+    border: none;
+    padding: 5px;
+    }
+    .color-header{
+    	width:100%;
+    	display: block;
+    }
+    .p-100{
+    	padding-top: 20px;
+    }
+}

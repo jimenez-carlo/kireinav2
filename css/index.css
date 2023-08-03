@@ -1,0 +1,87 @@
+.bottom-content-container{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	padding:5vh 10vw 10vh;
+	flex-wrap: wrap;
+}
+.bottom-content-container > div{
+	padding: 0 10px;
+}
+.bottom-content-container div h2{
+	width: fit-content;
+	color:#b73333;
+	border-bottom: 1px solid #b73333;
+}
+.bottom-content-container img{
+	margin-right: 10px;
+	width:50%;
+	height: auto;
+	object-fit:cover;
+}
+.bottom-content-container p{
+	width:50%;
+}
+.upper{
+	border-top:1px solid #b73333;
+	padding-top:10px;
+	display: flex;
+	flex-direction: row;
+	 /*padding: 5px;*/
+}
+.bottom{
+	padding-top:10px;
+}
+.bottom ul{
+	padding-left:15px;
+	list-style: none;
+}
+.bottom ul li{
+	padding: 2px;
+	font-size:14px;
+}
+.bottom ul li:before{
+  content: '✓ ';
+}
+
+.bottom ul li p{
+	float:right;
+	text-align: right;
+}
+.bottom-content-news,.bottom-content-faqs{
+	width:50%;
+}
+h3{
+  font-size: 26px;
+}
+@media only screen and (max-width: 500px) {
+	.bottom-content-container,.upper{
+	flex-direction: column;
+	}
+	.bottom-content-news,.bottom-content-faqs,.bottom-content-container img,.bottom-content-container p{
+		width:100%;
+	}
+}
+#t3{
+	padding: 0vh 10vw 10vh;
+    background-image: url('https://www.hohotint.com/statics/hohofilm/images/now/6a.jpg');
+    min-height: 400px;
+    background-position:bottom; 
+    background-repeat: no-repeat;
+	  background-color: black;
+}
+#t3 h1{
+	padding: 40px 0px 5% 0px;
+}
+.tabcontent ul{
+  width: 100%;
+  height: auto;
+  list-style: none;
+  color:#fff;
+}
+.tabcontent ul li:before{
+  content: '✓ ';
+}
+.tabcontent ul li{
+	margin-bottom: 15px;
+}

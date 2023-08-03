@@ -1,0 +1,28 @@
+{
+  "name": "kireinatint",
+  "version": "1.0.0",
+  "description": "static website\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[Ckireina windows film website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimenez-carlo/KireinaTint.git"
+  },
+  "keywords": [
+    "kireina",
+    "windows",
+    "films",
+    "glass",
+    "car",
+    "wall",
+    "builduings"
+  ],
+  "author": "carlo jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimenez-carlo/KireinaTint/issues"
+  },
+  "homepage": "https://github.com/jimenez-carlo/KireinaTint#readme"
+}
